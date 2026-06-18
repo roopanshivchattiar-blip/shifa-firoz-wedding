@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shifa ❤️ Firoz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#faf7f2;
+    color:#333;
+    overflow-x:hidden;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    animation:fadeIn 2s ease;
+}
+
+.monogram{
+    width:120px;
+    height:120px;
+    border:2px solid gold;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    font-family:'Cinzel',serif;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:'Cinzel',serif;
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-family:'Cinzel',serif;
+    font-size:2.5rem;
+    margin-bottom:40px;
+    color:#7b5d33;
+}
+
+.story{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.countdown{
+    text-align:center;
+    background:#111;
+    color:white;
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.box{
+    background:#222;
+    padding:20px;
+    border-radius:12px;
+    min-width:100px;
+}
+
+.box h2{
+    font-size:2rem;
+    color:gold;
+}
+
+.events{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#7b5d33;
+    margin-bottom:10px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.rsvp{
+    background:#f2ece2;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input,textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#7b5d33;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111;
+    color:white;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="monogram">SF</div>
+        <h1>Shifa & Firoz</h1>
+        <p>Together With Their Families</p>
+        <p>Request The Pleasure Of Your Presence</p>
+        <p>25 December 2026</p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Our Story</h2>
+    <div class="story">
+        <p>
+            Every love story is beautiful, but ours is our favorite.
+            This is dummy text for your trial website. Add your journey,
+            memories and special moments here.
+        </p>
+    </div>
+</section>
+
+<section class="countdown">
+    <h2 class="section-title" style="color:white;">Countdown To The Wedding</h2>
+
+    <div class="timer">
+        <div class="box">
+            <h2 id="days">00</h2>
+            <p>Days</p>
+        </div>
+
+        <div class="box">
+            <h2 id="hours">00</h2>
+            <p>Hours</p>
+        </div>
+
+        <div class="box">
+            <h2 id="minutes">00</h2>
+            <p>Minutes</p>
+        </div>
+
+        <div class="box">
+            <h2 id="seconds">00</h2>
+            <p>Seconds</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Wedding Events</h2>
+
+    <div class="events">
+
+        <div class="card">
+            <h3>Mehendi</h3>
+            <p>22 Dec 2026</p>
+            <p>Dummy Venue Name</p>
+        </div>
+
+        <div class="card">
+            <h3>Sangeet</h3>
+            <p>23 Dec 2026</p>
+            <p>Dummy Venue Name</p>
+        </div>
+
+        <div class="card">
+            <h3>Wedding</h3>
+            <p>25 Dec 2026</p>
+            <p>Dummy Venue Name</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=1000">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1000">
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1000">
+    </div>
+</section>
+
+<section class="rsvp">
+    <h2 class="section-title">RSVP</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Confirm Attendance</button>
+    </form>
+</section>
+
+<section>
+    <h2 class="section-title">Venue</h2>
+
+    <div style="text-align:center">
+        <p>Dummy Wedding Hall, Mumbai</p>
+        <br>
+
+        <iframe
+        src="https://www.google.com/maps/embed?pb="
+        width="100%"
+        height="350"
+        style="border:0;border-radius:15px;"
+        loading="lazy">
+        </iframe>
+
+    </div>
+</section>
+
+<footer>
+    <h3>Shifa ❤️ Firoz</h3>
+    <p>We Can't Wait To Celebrate With You</p>
+</footer>
+
+<script>
+
+const weddingDate = new Date("December 25, 2026 18:00:00").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+
+const distance = weddingDate - now;
+
+document.getElementById("days").innerHTML =
+Math.floor(distance / (1000*60*60*24));
+
+document.getElementById("hours").innerHTML =
+Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+
+document.getElementById("minutes").innerHTML =
+Math.floor((distance % (1000*60*60)) / (1000*60));
+
+document.getElementById("seconds").innerHTML =
+Math.floor((distance % (1000*60)) / 1000);
+
+},1000);
+
+</script>
+
+</body>
+</html>
